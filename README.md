@@ -3,3 +3,5 @@
 Overall documentation about the project
 
 ## [Roles](https://git.chalmers.se/courses/dit355/2020/group-2/documentation/-/blob/master/Roles.md)
+## [Trello guidlines](https://git.chalmers.se/courses/dit355/2020/group-2/documentation/-/blob/master/TrelloGuidelines.md)
+
