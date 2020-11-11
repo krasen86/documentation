@@ -1,12 +1,12 @@
 ## User Story
 
-**As a**  
-**I want**  
-**So that**  
+**As a** <br>
+**I want** <br>
+**So that** <br>
 
 
 ## Acceptance Criteria
 
-**Given**  
-**When**  
-**Then**  
+**Given** <br>
+**When** <br>
+**Then** <br>
