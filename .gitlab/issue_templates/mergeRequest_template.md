@@ -1,5 +1,5 @@
 ## Related Issue:
-- Issue here, can use keywords such as classes
+- Issue here, can use keywords such as closes, fixes, helps
 
 ## Proposed Changes:
 - Changes here 
