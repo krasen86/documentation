@@ -1,21 +1,21 @@
-## Trello Guidelines
+# Trello Guidelines
 
-# Card Backgrounds
+## Card Backgrounds
 Each card background color signifies the priority of a card.
 - Green: Low priority
 - Yellow: Medium priority
 - Red: High priority
 - Black: Passed due date
 
-# Labels
+## Labels
 Each card should have a label to indicate what topic/component it belongs to.
 - Light Blue: Documentation
 - Component labels TBD
 
-# Contribution
+## Contribution
 Team members are assigned to the cards they are contributing in.
 
-# Execution
+## Execution
 Cards are moved according to Kanban-style.
 The Trello board consists of the following categories:
 - Backlog
