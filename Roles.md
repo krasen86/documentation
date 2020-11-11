@@ -25,3 +25,4 @@ The following roles have been assigned in order to facilitate the project workfl
 | Submitting Assignments | Krasen  |
 | Submitting Assignments Backup | Chrystosomos |
 | Final Vote | Sandra |
+| Scrum Master Backup | Eemil |
