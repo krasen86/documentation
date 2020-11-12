@@ -11,7 +11,7 @@ When adding a new issue, first create a Trello card for it according to the temp
 - Create a feature branch based on the current develop branch for each new feature or bug
  
 ## Commits
-In you commits reference the GitLab Issue ID (#XY) and give a short description of the work done
+- In you commits reference the GitLab Issue ID (#XY) and give a short description of the work done
  
 ## Merge requests
 - Use the issue template for merge requests and reference the corresponding issues in it
