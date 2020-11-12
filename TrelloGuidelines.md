@@ -13,11 +13,12 @@ Each card should have a label to indicate what topic/component it belongs to.
 - Component labels TBD
 
 ## Contribution
-Team members are assigned to the cards they are contributing in.
+Team members are assigned to the cards they are contributing to.
 
 ## Execution
 Cards are moved according to Kanban-style.
 The Trello board consists of the following categories:
+- Templates
 - Backlog
 - TO-DO in sprint
 - Doing
