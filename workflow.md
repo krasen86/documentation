@@ -14,4 +14,5 @@ When adding a new issue, first create a Trello card for it according to the temp
 In you commits reference the GitLab Issue ID (#XY) and give a short description of the work done
  
 ## Merge requests
-Use the issue template for merge requests and reference the corresponding issues in it.
+- Use the issue template for merge requests and reference the corresponding issues in it
+- Link the merge request for a feature to the according Trello card with the GitLab power-up
