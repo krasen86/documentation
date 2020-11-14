@@ -25,6 +25,6 @@
 4.4. As an end-user I want to be able to make an appointment by providing my name, email and phone number so that I can complete a booking fast.  
 4.5. As an end-user I want to be able to see the booking form and availability of the clinics by selecting the clinics on the map so that I don’t need to navigate multiple pages to make an appointment.  
 
-# EPIC 5: The system shall be able to process multiple request by the end-user and update the system accordingly.
+## EPIC 5: The system shall be able to process multiple request by the end-user and update the system accordingly.
 
 5.1. As a developer I want the system to be able to process multiple requests so that first come, first served.  
