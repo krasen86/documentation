@@ -9,6 +9,8 @@ The current system for booking dental appointments in Sweden is currently very u
 # HOW
 The system will make use of a map API in order to display all existing dentist clinics in the Gothenburg area to the user. The user will be able to navigate the map, choose a clinic, and see the available appointment time slots for a date. The user will then be able to book a time slot, and the system will process the request.
 
+# Software Requirements Specification
+[SRS](/requirements/requirements-V1.md)
 # Software Architecture
 ## Architecture
 - Distributed system
