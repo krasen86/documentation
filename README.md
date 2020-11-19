@@ -23,7 +23,7 @@ The system will make use of a map API in order to display all existing dentist c
 
 ## Diagrams
 - [Use Case Diagram](/diagrams/v1/useCaseDiagram-v1.png)
-- [Component Diagram](/diagrams/v1/components-V1.png)
+- [Component Diagram](/diagrams/v2/components-V2.png)
 # UI Prototype
 [Prototype](https://www.figma.com/file/3xZO3wUXbr0LrK8UovMUED/Distribueno-alpha-v1?node-id=0%3A1)
 
