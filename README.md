@@ -23,7 +23,9 @@ The system will make use of a map API in order to display all existing dentist c
 
 ## Diagrams
 - [Use Case Diagram](/diagrams/v1/useCaseDiagram-v1.png)
-- [Component Diagram](/diagrams/v2/components-V2.png)
+- [Component Diagram](/diagrams/v2/components-V2.1.png)
+- [Deployment Diagram](/diagrams/v1/DeploymentDiagram-v1.png)
+
 # UI Prototype
 [Prototype](https://www.figma.com/file/3xZO3wUXbr0LrK8UovMUED/Distribueno-alpha-v1?node-id=0%3A1)
 
@@ -34,8 +36,8 @@ The system will make use of a map API in order to display all existing dentist c
 - [Vue.js](https://vuejs.org) 
 - [BootstrapVue](https://bootstrap-vue.org)
 - [Eclipse Mosquitto](https://mosquitto.org)
-- [Map API] (tbd) 
-- [MQTT.js](https://github.com/mqttjs/MQTT.js) OR [Eclipse Paho](https://www.eclipse.org/paho/index.php?page=documentation.php) 
+- [Leaflet JS](https://leafletjs.com) 
+- [MQTT.js](https://github.com/mqttjs/MQTT.js)
 - [Figma](https://www.figma.com)
 ## Project Management: 
 - [Trello](https://trello.com/b/oPfPY7yK/dit-355-2020-team-2)		
