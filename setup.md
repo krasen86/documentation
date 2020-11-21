@@ -7,6 +7,7 @@ https://mosquitto.org/download/
 - Configure the broker to accept websockets on port 1884.  
   Add the following lines to the mosquitto.conf file.
   ```
+  port 1883
   listener 1884
   protocol websockets
   ```
