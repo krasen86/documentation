@@ -36,6 +36,8 @@ The system will make use of a map API in order to display all existing dentist c
 - JavaScript ES6
 - [Npm](https://www.npmjs.com)
 - [Vue.js](https://vuejs.org) 
+- [Vuex State management](https://vuex.vuejs.org) 
+- [Vue Test Utils with Jest](https://vue-test-utils.vuejs.org) 
 - [BootstrapVue](https://bootstrap-vue.org)
 - [Eclipse Mosquitto](https://mosquitto.org)
 - [Leaflet JS](https://leafletjs.com) 
