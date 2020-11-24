@@ -24,7 +24,7 @@ The system will make use of a map API in order to display all existing dentist c
 ## Use Case Diagram
 ![Use Case Diagram](/diagrams/v2/UseCaseDiagram-v2.png "Use Case Diagram")
 ## Component Diagram
-![Component Diagram](/diagrams/v2/components-V2.1.png "Component Diagram")
+![Component Diagram](/diagrams/v2/component-V2.2.png "Component Diagram")
 ## Deployment Diagram
 ![Deployment Diagram](/diagrams/v1/DeploymentDiagram-v1.png "Deployment Diagram")
 
