@@ -22,11 +22,11 @@ The system will make use of a map API in order to display all existing dentist c
 ## Architectural Drivers
 
 ## Use Case Diagram
-![Use Case Diagram](/diagrams/v2/UseCaseDiagram-v2.png "Use Case Diagram")
+![Use Case Diagram](./diagrams/v2/UseCaseDiagram-v2.png "Use Case Diagram")
 ## Component Diagram
-![Component Diagram](/diagrams/v2/component-V2.2.png "Component Diagram")
+![Component Diagram](./diagrams/v2/component-V2.2.png "Component Diagram")
 ## Deployment Diagram
-![Deployment Diagram](/diagrams/v1/DeploymentDiagram-v1.png "Deployment Diagram")
+![Deployment Diagram](./diagrams/v1/DeploymentDiagram-v1.png "Deployment Diagram")
 
 # UI Prototype
 [Prototype](https://www.figma.com/file/3xZO3wUXbr0LrK8UovMUED/Distribueno-alpha-v1?node-id=0%3A1)
