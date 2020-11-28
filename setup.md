@@ -18,5 +18,5 @@ https://mosquitto.org/download/
 ## Dentist register
 - Clone the repository
 - Start the dentist registry
-    - navigate to dentistregistry/registry
+    - navigate to dentistregistry/src
     - run ```node index.js```
