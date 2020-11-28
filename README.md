@@ -29,6 +29,13 @@ The system is designed as a distributed system where every component/subsystem a
 
 ## Architectural Drivers
 
+Main architectural driver taken into consideration when designing the system and choosing architectural styles are:
+
+- Scalability: since a distributed, decoupled system well allows us to scale the different components when needed to adapt to the incoming request. Since the components can run on separate nodes we can scale the different components at different times.
+- Maintainability:: since the components are decoupled that will allow us to maintain them easier, for example different teams can maintain different components. That will increase the reusability of the components and their modifiability.
+- Portability: Since the components are independent and use a MQTT broker to communicate they can be deployed on different nodes and easily be replaced with other logical units since the communication happens only through a common interface and the components are logically decoupled.
+
+
 ## Component Diagram
 ![Component Diagram](./diagrams/v3/component-3.png "Component Diagram")
 ## Deployment Diagram
