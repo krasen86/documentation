@@ -27,6 +27,35 @@ The system will make use of a map API in order to display all existing dentist c
 ![Component Diagram](./diagrams/v3/component-3.png "Component Diagram")
 ## Deployment Diagram
 ![Deployment Diagram](./diagrams/v1/DeploymentDiagram-v1.png "Deployment Diagram")
+## Sequence Diagrams
+
+### Sequence Diagram for Use Case: Make a booking
+
+#### Description
+The diagram represents a high-level sequence and actions needed to make a booking as well as the corresponding components involved. The diagram displays only the subsystems involved in making a booking request for simplicity. The steps/sequences and components involved in performing the use case for every single subsystem can be seen in specific use case diagrams for those components. A pre-requisite for this use case is assumed that the UI component has received and displayed the dentist's time slots and that the user has selected a time, date and a clinic and the user has provided the needed data in the booking form. The use case starts the moment the user confirms the booking in the UI booking form.
+
+![Sequence Diagram for Use Case: Make a booking](./diagrams/v1/Sequence_Use_case_Booking_-_V1.png "Sequence Diagram for Use Case: Make a booking")
+
+### UI/Client Subsystem Sequence Diagram for Use Case: Make a booking
+
+#### Description
+The diagram represents the sequence and actions needed to make a booking as well as the corresponding components involved. The diagram focuses on the UI component/subsystem and the system communication with the booking subsystem which is represented only as a component for simplicity. The steps between the bookingRequest and booking Confirmation can be seen in the diagrams for the Booking subsystem and Availablitilty subsystem.
+
+![UI/Client Subsystem Sequence Diagram for Use Case: Make a booking](./diagrams/v1/Sequence_UI_Use_case_Booking_-_V1.png "UI/Client Subsystem Sequence Diagram for Use Case: Make a booking")
+
+### Booking Subsystem sequence diagram Use Case: Make a booking
+
+#### Description
+The diagram represents the sequence and actions needed to make a booking as well as the corresponding components involved. The diagram takes into consideration only the Booking subsystem/component and Availability and UI subsystem which are represented as components for simplisity, The steps needed prior to this use case can be seen in the UI sequence diagram. The steps between timeSlotsCheck and timeSlotConfirmation can be seen in the Availability Sequence diagram. Furthermore, the steps after confirmation can be seen in the UI subsystem diagram
+
+![Booking Subsystem sequence diagram Use Case: Make a booking](./diagrams/v1/Sequence_Booking_Use_case_Booking_-_V1.png "Booking Subsystem sequence diagram Use Case: Make a booking")
+
+### Availability Subsystem sequence diagram Use Case: Make a booking
+
+#### Description
+The diagram represents the sequence and actions needed to make a booking as well as the corresponding components involved. The diagram takes into consideration only the Availability subsystem/component and the system communication with the Booking. The steps needed prior to this use case can be seen in the Booking sequence diagram. The steps after confirmation can be seen in the Booking subsystem diagram
+
+![Availability Subsystem sequence diagram Use Case: Make a booking](./diagrams/v1/Sequence_Availability_Use_case_Booking_-_V1.png "Availability Subsystem sequence diagram Use Case: Make a booking")
 
 # UI Prototype
 [Prototype](https://www.figma.com/file/3xZO3wUXbr0LrK8UovMUED/Distribueno-alpha-v1?node-id=0%3A1)
