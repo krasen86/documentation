@@ -26,7 +26,7 @@
 4.4. As an end-user I want to be able to make an appointment by providing my name, email and phone number so that I can complete a booking fast.  
 4.5. As an end-user I want to be able to see the booking form and availability of the clinics by selecting the clinics on the map so that I don’t need to navigate multiple pages to make an appointment.  
 4.6. As an end-user I want to be able to make a booking for a specific time-slot and date, so that I can make the booking fit my own schedule.  
-4.7. As a product owner I want the system to handle bookings in the specified format (update1) so that the system is compatible with other systems.
+4.7. As a product owner I want the system bookings to include a timestamp in the specified format (update1) so that the availability time slots are updated accordingly.
 
 ## EPIC 5: The system shall be able to process multiple request by the end-user and update the system accordingly.
 5.1. As a developer I want the system to be able to process multiple requests so that first come, first served.  
