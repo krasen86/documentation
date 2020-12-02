@@ -20,11 +20,10 @@ The system will make use of a map API in order to display all existing dentist c
 
 The system is designed as a distributed system where every component/subsystem acts as an independent node. The main architectural style used for communication and data transfer between components is publish-subscribe. The client subscribes and listens to the a MQTT broker for different topics, but can publish as well (e.g. whilst creating the booking requests). The client uses a pipe-filter architecture style for filtering the incoming messages from the broker. The team designed a broker listener component that receives all incoming messages from the broker and filters them to the corresponding handlers and controllers following simple separation of concerns and GRASP design principles. The client also uses Model-view-viewmodel (MVVM) style in order to optimize the use of Vue.js and Vuex frontend framework functionality, especially the reactivity. Moreover, using this framework and the MVVM pattern allows for further decoupling between the business logic and UI components. The components on the backend are also using publish-subscribe pattern to communicate with each other, while taking advantage of the pipe-filter to handle the availability filtering of opening hours and booking requests as well as handling the booking.
 
-### Architectural styles
+### Architecture styles
 
 - Publish-subscribe: between the components and the corresponding subsystems
 - Pipe and filter: used in component level to filter and process the messages and also being able to handle all the different incoming requests 
-- Model-view-viewmodel (MVVM): used in the frontend UI components with Vuejs framework and Vuex
 
 ## Architectural Drivers
 
@@ -69,7 +68,7 @@ The diagram represents the sequence and actions needed to make a booking as well
 #### Description
 The diagram represents the sequence and actions needed to make a booking as well as the corresponding components involved. The diagram takes into consideration only the Availability subsystem/component and the system communication with the Booking. The steps needed prior to this use case can be seen in the Booking sequence diagram. The steps after confirmation can be seen in the Booking subsystem diagram
 
-![Availability Subsystem sequence diagram Use Case: Make a booking](./diagrams/v1/Sequence_Availability_Use_case_Booking_-_V1.png "Availability Subsystem sequence diagram Use Case: Make a booking")
+![Availability Subsystem sequence diagram Use Case: Make a booking](./diagrams/v2/Sequence_Availability_Use_case_booking_-_V2.png "Availability Subsystem sequence diagram Use Case: Make a booking")
 
 # UI Prototype
 [Prototype](https://www.figma.com/file/3xZO3wUXbr0LrK8UovMUED/Distribueno-alpha-v1?node-id=0%3A1)
