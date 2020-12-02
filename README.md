@@ -25,7 +25,12 @@ The system is designed as a distributed system where every component/subsystem a
 - Publish-subscribe: between the components and the corresponding subsystems
 - Pipe and filter: used in component level to filter and process the messages and also being able to handle all the different incoming requests 
 
-## Architectural Drivers
+### Design patterns and principles
+
+- Model-view-viewmodel (MVVM): used in the frontend UI components with Vuejs framework and Vuex
+- GRASP and SOLID principles for low level class design for the business logic part, especially single-responsibility and separation of concerns.
+
+### Architectural Drivers
 
 Main architectural driver taken into consideration when designing the system and choosing architectural styles are:
 
