@@ -18,14 +18,13 @@ The system will make use of a map API in order to display all existing dentist c
 # Software Architecture
 ## Architecture overview
 
-The system is designed as a distributed system where every component/subsystem acts as an independent node. The main architectural style used for communication and data transfer between components is publish-subscribe. The client subscribes and listens to the a MQTT broker for different topics, but can publish as well (e.g. whilist creating the booking requests). The client uses a pipe-filter architecture style for filtering the incoming messages from the broker. The team designed a broker listener component that receives all incoming messages from the broker and filters them to the corresponding handlers and controllers following simple separation of concerns and GRASP design principles. The client also uses Model-view-viewmodel (MVVM) style in order to optimize the use of Vue.js and Vuex frontend framework functionality, especially the reactivity. Moreover, using this framework and the MVVM pattern allows for further decoupling between the business logic and UI components. The components on the backend are also using publish-subscribe pattern to communicate with each other, while taking advantages of the pipe-filter to handle the availability filtering of opening hours and booking requests as well as handling the booking.
+The system is designed as a distributed system where every component/subsystem acts as an independent node. The main architectural style used for communication and data transfer between components is publish-subscribe. The client subscribes and listens to the a MQTT broker for different topics, but can publish as well (e.g. whilst creating the booking requests). The client uses a pipe-filter architecture style for filtering the incoming messages from the broker. The team designed a broker listener component that receives all incoming messages from the broker and filters them to the corresponding handlers and controllers following simple separation of concerns and GRASP design principles. The client also uses Model-view-viewmodel (MVVM) style in order to optimize the use of Vue.js and Vuex frontend framework functionality, especially the reactivity. Moreover, using this framework and the MVVM pattern allows for further decoupling between the business logic and UI components. The components on the backend are also using publish-subscribe pattern to communicate with each other, while taking advantage of the pipe-filter to handle the availability filtering of opening hours and booking requests as well as handling the booking.
 
 ### Architectural styles
 
 - Publish-subscribe: between the components and the corresponding subsystems
 - Pipe and filter: used in component level to filter and process the messages and also being able to handle all the different incoming requests 
 - Model-view-viewmodel (MVVM): used in the frontend UI components with Vuejs framework and Vuex
-- GRASP and SOLID principles for low level class design for the business logic part, especially single-responsibility and separation of concerns.
 
 ## Architectural Drivers
 
