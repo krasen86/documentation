@@ -59,7 +59,7 @@ The diagram represents a high-level sequence and actions needed to make a bookin
 #### Description
 The diagram represents the sequence and actions needed to make a booking as well as the corresponding components involved. The diagram focuses on the UI component/subsystem and the system communication with the booking subsystem which is represented only as a component for simplicity. The steps between the bookingRequest and booking Confirmation can be seen in the diagrams for the Booking subsystem and Availablitilty subsystem.
 
-![UI/Client Subsystem Sequence Diagram for Use Case: Make a booking](./diagrams/v1/Sequence_UI_Use_case_Booking_-_V1.png "UI/Client Subsystem Sequence Diagram for Use Case: Make a booking")
+![UI/Client Subsystem Sequence Diagram for Use Case: Make a booking](./diagrams/v2/Sequence_UI_Use_case_Booking_-_V2.png.png "UI/Client Subsystem Sequence Diagram for Use Case: Make a booking")
 
 ### Booking Subsystem sequence diagram Use Case: Make a booking
 
