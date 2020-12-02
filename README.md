@@ -37,7 +37,7 @@ Main architectural driver taken into consideration when designing the system and
 
 
 ## Component Diagram
-![Component Diagram](./diagrams/v3/component-3.png "Component Diagram")
+![Component Diagram](./diagrams/v3/component-3.1.png "Component Diagram")
 ## Deployment Diagram
 ![Deployment Diagram](./diagrams/v1/DeploymentDiagram-v1.png "Deployment Diagram")
 ## Use Case Diagram
