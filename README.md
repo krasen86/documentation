@@ -18,12 +18,16 @@ The system will make use of a map API in order to display all existing dentist c
 # Software Architecture
 ## Architecture overview
 
-The system is designed as a distributed system where every component/subsystem acts as an independent node. The main architectural style used for communication and data transfer between components is publish-subscribe. The client subscribes and listens to the a MQTT broker for different topics, but can publish as well (e.g. whilst creating the booking requests). The client uses a pipe-filter architecture style for filtering the incoming messages from the broker. The team designed a broker listener component that receives all incoming messages from the broker and filters them to the corresponding handlers and controllers following simple separation of concerns and GRASP design principles. The client also uses Model-view-viewmodel (MVVM) style in order to optimize the use of Vue.js and Vuex frontend framework functionality, especially the reactivity. Moreover, using this framework and the MVVM pattern allows for further decoupling between the business logic and UI components. The components on the backend are also using publish-subscribe pattern to communicate with each other, while taking advantage of the pipe-filter to handle the availability filtering of opening hours and booking requests as well as handling the booking.
+The system is designed as a distributed system where every component/subsystem acts as an independent node. The main architectural style used for communication and data transfer between components is publish-subscribe. The client subscribes and listens to the a MQTT broker for different topics, but can publish as well (e.g. whilst creating the booking requests).
+<br><br>
+The client uses a client-server architectural style for communicating with the idGenerator component. The client requests userId and requestId while the idGenerator has the responsibility to issue and maintain the user/request information. Furthermore, the dentistRegistry takes advantage of the client-server architectural style in order to continuously retrieve the clinics' information from the external dentist registry API by using an HTTP request. [2020-12-14]
+<br><br>
+The team designed a broker listener component that receives all incoming messages from the broker and filters them to the corresponding handlers and controllers following simple separation of concerns and GRASP design principles. The client also uses Model-view-viewmodel (MVVM) style in order to optimize the use of Vue.js and Vuex frontend framework functionality, especially the reactivity. Moreover, using this framework and the MVVM pattern allows for further decoupling between the business logic and UI components. The components on the backend are also using publish-subscribe pattern to communicate with each other, while the messages are processed by listeners and controllers to handle the availability filtering of opening hours and booking requests as well as handling the booking.
 
 ### Architecture styles
 
 - Publish-subscribe: between the components and the corresponding subsystems
-- Pipe and filter: used in component level to filter and process the messages and also being able to handle all the different incoming requests 
+- Client-server: Used to integrate the external dentist registry API by using HTTP request. Also used between the idGenerator(server) and client(client) by using RPC API [2020-12-14]
 
 ### Design patterns and principles
 
