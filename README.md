@@ -86,6 +86,7 @@ The diagram represents the sequence and actions needed to make a booking as well
 ## Software: 
 - JavaScript ES6
 - [Npm](https://www.npmjs.com)
+- [Lodash](https://lodash.com)
 - [Vue.js](https://vuejs.org) 
 - [Vuex State management](https://vuex.vuejs.org) 
 - [Vue Test Utils with Jest](https://vue-test-utils.vuejs.org) 
