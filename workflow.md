@@ -16,3 +16,4 @@ When adding a new issue, first create a Trello card for it according to the temp
 ## Merge requests
 - Use the issue template for merge requests and reference the corresponding issues in it
 - Link the merge request for a feature to the according Trello card with the GitLab power-up
+- Assign a person to review that merge request and post a message in messenger by tagging that persons name
