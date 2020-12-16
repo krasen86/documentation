@@ -94,6 +94,13 @@ The diagram represents the sequence and actions needed to make a booking as well
 - [Leaflet JS](https://leafletjs.com) 
 - [MQTT.js](https://github.com/mqttjs/MQTT.js)
 - [Figma](https://www.figma.com)
+- [Expressjs](https://expressjs.com)
+- [Mongoosejs](https://mongoosejs.com)
+- [Axios](https://www.npmjs.com/package/axios)
+- [Winston](https://www.npmjs.com/package/winston)
+- [Winston-Mongodb](https://www.npmjs.com/package/winston-mongodb)
+- [Limiter](https://www.npmjs.com/package/limiter)
+
 ## Project Management: 
 - [Trello](https://trello.com/b/oPfPY7yK/dit-355-2020-team-2)		
 - [Google Drive](https://drive.google.com/drive/folders/1TaH2hneIUDwb7-DeefhaFK1FYkCDtH6U?usp=sharing)
