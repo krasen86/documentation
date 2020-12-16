@@ -43,8 +43,8 @@ Main architectural driver taken into consideration when designing the system and
 - Portability: Since the components are independent and use a MQTT broker to communicate they can be deployed on different nodes and easily be replaced with other logical units since the communication happens only through a common interface and the components are logically decoupled.
 
 
-## Component Diagram [last updated: 2020-12-15]
-![Component Diagram](./diagrams/v4/component-V4.png "Component Diagram")
+## Component Diagram [last updated: 2020-12-16]
+![Component Diagram](./diagrams/v4/component-V4.1.png "Component Diagram")
 ## Deployment Diagram [last updated: 2020-12-15]
 ![Deployment Diagram](./diagrams/v2/deploymentDiagram-V2.png "Deployment Diagram")
 ## Use Case Diagram
