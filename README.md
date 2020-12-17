@@ -83,6 +83,18 @@ The diagram represents the sequence and actions needed to make a booking as well
 [Prototype](https://www.figma.com/file/3xZO3wUXbr0LrK8UovMUED/Distribueno-alpha-v1?node-id=0%3A1)
 
 # Technical Overview 
+
+## Fault tolerance
+
+The main use case that the team has identified by taking in consideration both the project's requirements and constrains is creating a booking to one of the available dentist clinics. Consequently, the component that shall act as the main entry point in order to process, forward and respond the corresponding requests is the [Booking](https://git.chalmers.se/courses/dit355/2020/group-2/booking). Therefore, as far as introducing a fault-tolerance mechanism is concerned, a request rate limiter has been implemented as part of the booking component. <br>
+Specifically, whenever the number of incoming requests exceeds the rate of 100 booking requests in 10 seconds then the rate limiter denies any new ones, hence preventing the system from experiencing any downtime due to any possible Denial of Service attacks. In the event that the incoming requests return to the normal rate (less or equal to 100reqs/s) then they should be accepted from system and therefore returning to the previous normal operating state. <br>
+Ultimately, as a way to visualize the rate limiter's functionality, the incoming requests are both logged in the backend's running server console as well as in the component's database (MongoDB). Below you can see an indicative example of recorded console messages for both an accepted and a denied request:
+
+```
+2020-12-17T00:00:00.000Z [Accepted] info: Request id: 41 User id: uuid-176704a278061b8b1 Dentist id: 1
+2020-12-17T00:00:00.000Z [Denied] warn: Request id: 57 User id: uuid-176704a278471268f Dentist id: 1
+```
+
 ## Software: 
 - JavaScript ES6
 - [Npm](https://www.npmjs.com)
