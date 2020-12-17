@@ -20,14 +20,14 @@ The system will make use of a map API in order to display all existing dentist c
 
 The system is designed as a distributed system where every component/subsystem acts as an independent node. The main architectural style used for communication and data transfer between components is publish-subscribe. The client subscribes and listens to the a MQTT broker for different topics, but can publish as well (e.g. whilst creating the booking requests).
 <br><br>
-The client uses a client-server architectural style for communicating with the idGenerator component. The client requests userId and requestId while the idGenerator has the responsibility to issue and maintain the user/request information. Furthermore, the dentistRegistry takes advantage of the client-server architectural style in order to continuously retrieve the clinics' information from the external dentist registry API by using an HTTP request. [2020-12-14]
+The BookingUI uses a client-server architectural style for communicating with the idGenerator component. The BookingUI requests userId and requestId while the idGenerator has the responsibility to issue and maintain the user/request information. Furthermore, the dentistRegistry takes advantage of the client-server architectural style in order to continuously retrieve the clinics' information from the external dentist registry API by using an HTTP request. [2020-12-14]
 <br><br>
-The team designed a broker listener component that receives all incoming messages from the broker and filters them to the corresponding handlers and controllers following simple separation of concerns and GRASP design principles. The client also uses Model-view-viewmodel (MVVM) style in order to optimize the use of Vue.js and Vuex frontend framework functionality, especially the reactivity. Moreover, using this framework and the MVVM pattern allows for further decoupling between the business logic and UI components. The components on the backend are also using publish-subscribe pattern to communicate with each other, while the messages are processed by listeners and controllers to handle the availability filtering of opening hours and booking requests as well as handling the booking.
+The team designed a broker listener component that receives all incoming messages from the broker and filters them to the corresponding handlers and controllers following simple separation of concerns and GRASP design principles. The BookingUI also uses Model-view-viewmodel (MVVM) style in order to optimize the use of Vue.js and Vuex frontend framework functionality, especially the reactivity. Moreover, using this framework and the MVVM pattern allows for further decoupling between the business logic and UI components. The components on the backend are also using publish-subscribe pattern to communicate with each other, while the messages are processed by listeners and controllers to handle the availability filtering of opening hours and booking requests as well as handling the booking.
 
 ### Architecture styles
 
 - Publish-subscribe: between the components and the corresponding subsystems
-- Client-server: Used to integrate the external dentist registry API by using HTTP request. Also used between the idGenerator(server) and client(client) by using RPC API [2020-12-14]
+- Client-server: Used to integrate the external dentist registry API by using HTTP request. Also used between the idGenerator(server) and BookingUI(client) by using RPC API [2020-12-14]
 
 ### Design patterns and principles
 
@@ -58,12 +58,12 @@ The diagram represents a high-level sequence and actions needed to make a bookin
 
 ![Sequence Diagram for Use Case: Make a booking](./diagrams/v1/Sequence_Use_case_Booking_-_V1.png "Sequence Diagram for Use Case: Make a booking")
 
-### UI/Client Subsystem Sequence Diagram for Use Case: Make a booking
+### BookingUI Subsystem Sequence Diagram for Use Case: Make a booking
 
 #### Description
-The diagram represents the sequence and actions needed to make a booking as well as the corresponding components involved. The diagram focuses on the UI component/subsystem and the system communication with the booking subsystem which is represented only as a component for simplicity. The steps between the bookingRequest and booking Confirmation can be seen in the diagrams for the Booking subsystem and Availablitilty subsystem.
+The diagram represents the sequence and actions needed to make a booking as well as the corresponding components involved. The diagram focuses on the BookingUI component/subsystem and the system communication with the booking subsystem which is represented only as a component for simplicity. The steps between the bookingRequest and booking Confirmation can be seen in the diagrams for the Booking subsystem and Availablitilty subsystem.
 
-![UI/Client Subsystem Sequence Diagram for Use Case: Make a booking](./diagrams/v2/Sequence_UI_Use_case_Booking_-_V2.1.png "UI/Client Subsystem Sequence Diagram for Use Case: Make a booking")
+![BookingUI Subsystem Sequence Diagram for Use Case: Make a booking](./diagrams/v3/Sequence_Use_case_Booking_V3.png "BookingUI Subsystem Sequence Diagram for Use Case: Make a booking")
 
 ### Booking Subsystem sequence diagram Use Case: Make a booking
 
