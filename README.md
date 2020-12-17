@@ -48,7 +48,7 @@ Main architectural driver taken into consideration when designing the system and
 ## Deployment Diagram [last updated: 2020-12-15]
 ![Deployment Diagram](./diagrams/v2/deploymentDiagram-V2.png "Deployment Diagram")
 ## Use Case Diagram
-![Use Case Diagram](./diagrams/v3/Sequence_Use_case_Booking_V3.png "Use Case Diagram")
+![Use Case Diagram](./diagrams/v2/UseCaseDiagram-v2.png "Use Case Diagram")
 ## Sequence Diagrams
 
 ### Sequence Diagram for Use Case: Make a booking
@@ -56,14 +56,14 @@ Main architectural driver taken into consideration when designing the system and
 #### Description
 The diagram represents a high-level sequence and actions needed to make a booking as well as the corresponding components involved. The diagram displays only the subsystems involved in making a booking request for simplicity. The steps/sequences and components involved in performing the use case for every single subsystem can be seen in specific use case diagrams for those components. A pre-requisite for this use case is assumed that the UI component has received and displayed the dentist's time slots and that the user has selected a time, date and a clinic and the user has provided the needed data in the booking form. The use case starts the moment the user confirms the booking in the UI booking form.
 
-![Sequence Diagram for Use Case: Make a booking](./diagrams/v1/Sequence_Use_case_Booking_-_V1.png "Sequence Diagram for Use Case: Make a booking")
+![Sequence Diagram for Use Case: Make a booking](./diagrams/v3/Sequence_Use_case_Booking_-_V3.1.png "Sequence Diagram for Use Case: Make a booking")
 
 ### BookingUI Subsystem Sequence Diagram for Use Case: Make a booking
 
 #### Description
 The diagram represents the sequence and actions needed to make a booking as well as the corresponding components involved. The diagram focuses on the BookingUI component/subsystem and the system communication with the booking subsystem which is represented only as a component for simplicity. The steps between the bookingRequest and booking Confirmation can be seen in the diagrams for the Booking subsystem and Availablitilty subsystem.
 
-![BookingUI Subsystem Sequence Diagram for Use Case: Make a booking](./diagrams/v3/Sequence_Use_case_Booking_V3.png "BookingUI Subsystem Sequence Diagram for Use Case: Make a booking")
+![BookingUI Subsystem Sequence Diagram for Use Case: Make a booking](./diagrams/v3/Sequence_BookingUI_Use_case_Booking_-_V3.png "BookingUI Subsystem Sequence Diagram for Use Case: Make a booking")
 
 ### Booking Subsystem sequence diagram Use Case: Make a booking
 
