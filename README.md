@@ -45,6 +45,13 @@ Main architectural driver taken into consideration when designing the system and
 
 ## Component Diagram [last updated: 2020-12-16]
 ![Component Diagram](./diagrams/v4/component-V4.1.png "Component Diagram")
+### low-level component diagrams
+[bookingUI](https://git.chalmers.se/courses/dit355/2020/group-2/client/-/blob/master/documentation/ComponentBookingUI-1.png)  
+[dentistRegistry](https://git.chalmers.se/courses/dit355/2020/group-2/dentistregistry/-/blob/master/documentation/componentDentistRegistry-1.png)  
+[timeslotProcessor](https://git.chalmers.se/courses/dit355/2020/group-2/availability/-/blob/master/documentation/images/component-5.png)  
+[booking](https://git.chalmers.se/courses/dit355/2020/group-2/booking/-/blob/master/documentation/images/component-5.png)  
+[idGenerator](https://git.chalmers.se/courses/dit355/2020/group-2/idgenerator/-/blob/master/documentation/diagrams/componentIdGenerator-v1.png)  
+
 ## Deployment Diagram [last updated: 2020-12-17]
 ![Deployment Diagram](./diagrams/v3/deploymentDiagram-v3.png "Deployment Diagram")
 ## Use Case Diagram
