@@ -79,6 +79,15 @@ The diagram represents the sequence and actions needed to make a booking as well
 
 ![Availability Subsystem sequence diagram Use Case: Make a booking](./diagrams/v2/Sequence_Availability_Use_case_booking_-_V2.png "Availability Subsystem sequence diagram Use Case: Make a booking")
 
+### idGenerator Subsystem sequence diagram Use Case: Make a booking [last updated 2020-12-18]
+
+#### Description
+The diagram represents the sequence and actions needed in the idGenerator component in order to make a booking. The diagram takes into consideration only the idGenerator subsystem/component and the system communication with the bookingUI. The steps needed prior to this use case can be seen in the bookingUI sequence diagram, along with the steps following this sequence diagram.<br>
+*The steps in the bookingUI subsystem can be seen in the bookingUI sequence diagram. <br>
+**A prerequisite is that the app is listening to a port and connected to the mongoDB database.
+
+![idGenerator Subsystem sequence diagram Use Case: Make a booking](./diagrams/v1/Sequence_IdGenerator_Use_case_Booking-v1.png "idGenerator Subsystem sequence diagram Use Case: Make a booking")
+
 # UI Prototype
 [Prototype](https://www.figma.com/file/3xZO3wUXbr0LrK8UovMUED/Distribueno-alpha-v1?node-id=0%3A1)
 
