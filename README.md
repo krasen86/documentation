@@ -13,7 +13,7 @@ The system will make use of a map API in order to display all existing dentist c
 [Project Setup](./setup.md)
 
 # Software Requirements Specification
-[SRS](/requirements/requirements-V1.md)
+[SRS](/requirements/requirements-V2.md)
 
 # Software Architecture
 ## Architecture overview
