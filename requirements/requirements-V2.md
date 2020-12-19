@@ -13,7 +13,7 @@ US2.2. As an end-user I want the location of the dentist displayed on the map so
 US2.3. As an end-user I want to be able to navigate the map so that I can find a dentist in Gothenburg.  
 US2.4. As an end-user I want to be able to change the focus (zoom) of the map so that I can get an overview of the clinics in the area.  
 US2.5. As an end-user I want to be able to select a clinic so that I can get more information about the clinic.  
-US2.6. As an end-user I want the system to be able to update the map of dentists with new clinics in the area, so that I can book appointments to clinics most relevant to me  [update 1]
+US2.6. As an end-user I want the system to be able to update the map of dentists with new clinics in the area, so that I can book appointments to clinics most relevant to me.  [update 1]<br>
 US2.7. As an end-user I want to be able to see clinics that have available time slots for a date of my liking so that I don’t have to browse all clinics. [update 2]
 
 ## EPIC 3: The system shall be able to update the time slots availability for the clinics in the Gothenburg area.
