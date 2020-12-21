@@ -90,7 +90,7 @@ The diagram represents the sequence and actions needed to make a booking as well
 #### Description
 The diagram represents the sequence and actions needed to make a booking as well as the corresponding components involved. The diagram takes into consideration only the Availability subsystem/component and the system communication with the Booking. The steps needed prior to this use case can be seen in the Booking sequence diagram. The steps after confirmation can be seen in the Booking subsystem diagram
 
-![Availability Subsystem sequence diagram Use Case: Make a booking](./diagrams/v2/Sequence_Availability_Use_case_booking_-_V2.png "Availability Subsystem sequence diagram Use Case: Make a booking")
+![Availability Subsystem sequence diagram Use Case: Make a booking](./diagrams/v3/Sequence_Use_case_Booking_timeslotprocessor-v3.png "Availability Subsystem sequence diagram Use Case: Make a booking")
 
 ### idGenerator Subsystem sequence diagram Use Case: Make a booking [last updated 2020-12-18]
 
