@@ -114,15 +114,15 @@ Ultimately, as a way to visualize the rate limiter's functionality, the incoming
 ## Quality of service
 The number in the parentheses refers to the number of the data-flow number of the component-diagram.
 
-- (1) Publish dentist data
+- (1) Publish clinics data
   - Qos: 1
-  - Reasoning: The requirement is that changes to the dentist registry must be handled by the system in less than 10 minutes. Therefore, the system makes sure that, when a change occurs it is at least published once. Multiple publications don't effect the system too much since, other components compare the incoming dentist files to the current one and only update when it differs.
+  - Reasoning: The requirement is that changes to the dentist registry must be handled by the system in less than 10 minutes. Therefore, the system makes sure when a change occurs it is at least published once. Multiple publications don't effect the system too much since, other components compare the incoming dentist files to the current one and only update when it differs.
 - (2) Publish available timeslots
   - Qos: 1
   - Reasoning: Publishing the availability of timeslots for a clinic is quite important for making a booking, but it gets updated frequently. Therefore, the team has chosen a qos of 1 to increase the likelihood that the message gets received without the overhead of a qos 2. 
 - (2x) Publish availability per date
   - Qos: 0
-  - Reasoning: This type of data is not crucial for the main use case of making a booking, and it is a lot of data. Even a qos of 1 would lead to massive traffic, therefore the team decided to send this data only once.
+  - Reasoning: This type of data is not crucial for the main use case of making a booking, and it is a lot of data. Even a qos of 1 would lead to massive traffic, therefore the team decided to send this data at most once.
 - (4) Booking request
   - Qos: 1
   - Reasoning: By publishing this kind of data, other components get triggered to process a booking. Therefore, the initial plan was to use qos: 2, to make sure the processing methods only get triggered once. However, by the overhead of making sure a message is only received once, the speed of the system decreased so much, that it was not satisfying to use anymore. Hence, the team decreased the qos to 1, because even when some methods get triggered twice, the speed for making a booking increased by a big margin.
