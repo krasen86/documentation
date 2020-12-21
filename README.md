@@ -1,4 +1,4 @@
-# Documentation
+# Dentistimo Documentation
 
 # WHAT
 The aim of this system is to provide end-users with an interface to book dentist appointments in Gothenburg. For convenient use the dentist clinics are displayed on a map that the user can navigate. The system is built distributed with publish-subscribe as the main architectural style. 
