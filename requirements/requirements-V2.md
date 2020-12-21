@@ -8,7 +8,7 @@ US1.4. As an end-user I want to be able to see the name of the owner of each cli
 US1.5. As an end-user I want the system to be able to update the clinics opening when changes occur, so that I can make bookings according to the correct opening hours. [Update 1]
 
 ## EPIC 2: The system shall be able to display dentists in the Gothenburg area on a map.
-US2.1. As a developer, I want to introduce a map feature, so that end-users have a graphical way of finding dentists.  
+US2.1. As a developer I want to introduce a map feature, so that end-users have a graphical way of finding dentists.  
 US2.2. As an end-user I want the location of the dentist displayed on the map so that I can decide on a location that is convenient for me.  
 US2.3. As an end-user I want to be able to navigate the map so that I can find a dentist in Gothenburg.  
 US2.4. As an end-user I want to be able to change the focus (zoom) of the map so that I can get an overview of the clinics in the area.  
@@ -29,9 +29,9 @@ US4.5. As an end-user I want to be able to see the booking form and availability
 US4.6. As an end-user I want to be able to make a booking for a specific time-slot and date, so that I can make the booking fit my own schedule. [update 1]  
 US4.7. As a product owner I want the system bookings to include a timestamp in the specified format (update1) so that the availability time slots are updated accordingly. [update 1]
 
-## EPIC 5: The system shall be able to process multiple request by the end-user and update the system accordingly.
-US5.1. As a developer I want the system to be able to process multiple requests so that first come, first served.<br>
+## EPIC 5: The system shall be able to process multiple request (at least 100 booking requests within 10s[update 1]) by the end-user and update the system accordingly.
+US5.1. As a developer I want the system to be able to process multiple booking requests in order of their issuance number, so that the end-user requests are processed in order and fairly. <br>
 US5.2. As a product owner I want to introduce a request generator so that I can stress-test the system. [update 1]<br>
-US5.2.1. See detailed specifications in the update document. [update 1]<br>
+US5.2.1. As a product owner I want the request generator to be able to send at least 100 requests within 10s so that I can verify that the system can handle a certain request load. [update 1]<br>
 US5.3. As a developer I want the system to have fault-tolerance mechanisms so that the components can handle high request loads. [update 2]<br>
 US5.3.1 As a PO I want the system to have logging mechanisms so that I can trace the overload, reaction and effect on the system. [update 2]<br>
