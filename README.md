@@ -81,9 +81,9 @@ The diagram represents the sequence and actions needed to make a booking as well
 ### Booking Subsystem sequence diagram Use Case: Make a booking
 
 #### Description
-The diagram represents the sequence and actions needed to make a booking as well as the corresponding components involved. The diagram takes into consideration only the Booking subsystem/component and Availability and UI subsystem which are represented as components for simplisity, The steps needed prior to this use case can be seen in the UI sequence diagram. The steps between timeSlotsCheck and timeSlotConfirmation can be seen in the Availability Sequence diagram. Furthermore, the steps after confirmation can be seen in the UI subsystem diagram
+The diagram represents the sequence and actions needed to make a booking as well as the corresponding components involved. The diagram takes into consideration only the Booking subsystem/component and TimeslotProcessor and bookingUI subsystem which are represented as components for simplicity, The steps needed prior to this use case can be seen in the bookingUI sequence diagram. The steps between 5.processMessage and 5.2bookingResponseTopic can be seen in the TimeslotProcessor Sequence diagram. Furthermore, the steps after 10.responseTopic can be seen in the bookingUI subsystem diagram.
 
-![Booking Subsystem sequence diagram Use Case: Make a booking](./diagrams/v2/Sequence_Booking_Use_case_Booking-V2.png "Booking Subsystem sequence diagram Use Case: Make a booking")
+![Booking Subsystem sequence diagram Use Case: Make a booking](./diagrams/v4/Sequence_Booking_Use_case_Booking-V4.png "Booking Subsystem sequence diagram Use Case: Make a booking")
 
 ### Availability Subsystem sequence diagram Use Case: Make a booking
 
