@@ -142,6 +142,12 @@ The number in the parentheses refers to the number of the data-flow number of th
   - Qos: 1
   - Reasoning: By publishing this kind of data, other components get triggered to process a booking. Therefore, the initial plan was to use qos: 2, to make sure the processing methods only get triggered once. However, by the overhead of making sure a message is only received once, the speed of the system decreased so much, that it was not satisfying to use anymore. Hence, the team decreased the qos to 1, because even when some methods get triggered twice, the speed for making a booking increased by a big margin.
 
+## Testing
+
+The team conducted manual testing of the different components, in order to verify both their individual functionality as well as the integration of them as part of the whole distributed system. The test cases that were covered are listed in this [spreadsheet document](https://docs.google.com/spreadsheets/d/1sVrW3H8GXKU8Zqsqo28yDHBOg3JuYMPrxIKelI0E1I8/edit?usp=sharing), which provides a description of them, a mapping to the requirements under test as well as the corresponding outcomes that help identify any possible issues.
+
+In addition, some unit tests were added in the bookingUI component as can be seen in this [report](https://git.chalmers.se/courses/dit355/2020/group-2/client/-/jobs/87834), which they mostly cover the rendering of the respective sub-components.
+
 ## Known issues
 
 1. Date timezone js problem - Inconsistency in the timeslotProcessor when creating timeslots around midnight based on timezones and daylight savings time.
