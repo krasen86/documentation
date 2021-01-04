@@ -142,6 +142,13 @@ The number in the parentheses refers to the number of the data-flow number of th
   - Qos: 1
   - Reasoning: By publishing this kind of data, other components get triggered to process a booking. Therefore, the initial plan was to use qos: 2, to make sure the processing methods only get triggered once. However, by the overhead of making sure a message is only received once, the speed of the system decreased so much, that it was not satisfying to use anymore. Hence, the team decreased the qos to 1, because even when some methods get triggered twice, the speed for making a booking increased by a big margin.
 
+## Known issues
+
+1. Date timezone js problem - Inconsistency in the timeslotProcessor when creating timeslots around midnight based on timezones and daylight savings time.
+2. Not removing files/timeslots when clinic is deleted - Files of deleted clinics are not removed from the timeslotProcessor.
+3. Cannot delete clinic day - The external data source needs to provide opening hours for all weekdays except Saturday and Sunday.
+4. Winston-mongoDB issue for MAC - The OS sometimes throws connection errors when trying to communicate with mongoDB.
+
 ## Software: 
 - JavaScript ES6
 - [Npm](https://www.npmjs.com)
