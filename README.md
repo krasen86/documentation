@@ -48,14 +48,14 @@ Main architectural driver taken into consideration when designing the system and
 ### Components 
 Further information about the individual components with their low-level component diagrams as well as the source-code can be found at:
  
-[bookingUI](https://git.chalmers.se/courses/dit355/2020/group-2/client)  
-[dentistRegistry](https://git.chalmers.se/courses/dit355/2020/group-2/dentistregistry)  
-[timeslotProcessor](https://git.chalmers.se/courses/dit355/2020/group-2/availability)  
-[booking](https://git.chalmers.se/courses/dit355/2020/group-2/booking)  
-[idGenerator](https://git.chalmers.se/courses/dit355/2020/group-2/idgenerator) 
+[bookingUI](https://github.com/krasen86/bookingUI)  
+[dentistRegistry](https://github.com/krasen86/dentistregistry)  
+[timeslotProcessor](https://github.com/krasen86/timeslotProcessor)  
+[booking](https://github.com/krasen86/booking)  
+[idGenerator](https://github.com/krasen86/idgenerator) 
 
 For load and stress testing an additional component was introduced and the source code can be found at: 
-[requestGenerator](https://git.chalmers.se/courses/dit355/2020/group-2/requestgenerator) 
+[requestGenerator](https://github.com/krasen86/requestgenerator) 
 
 
 ## Deployment Diagram [last updated: 2020-12-17]
@@ -108,7 +108,7 @@ The diagram represents the sequence and actions needed in the idGenerator compon
 
 ## Fault tolerance
 
-The main use case that the team has identified by taking in consideration both the project's requirements and constrains is creating a booking to one of the available dentist clinics. Consequently, the component that shall act as the main entry point in order to process, forward and respond the corresponding requests is the [Booking](https://git.chalmers.se/courses/dit355/2020/group-2/booking). Therefore, as far as introducing a fault-tolerance mechanism is concerned, a request rate limiter has been implemented as part of the booking component. <br>
+The main use case that the team has identified by taking in consideration both the project's requirements and constrains is creating a booking to one of the available dentist clinics. Consequently, the component that shall act as the main entry point in order to process, forward and respond the corresponding requests is the [Booking](https://github.com/krasen86/booking). Therefore, as far as introducing a fault-tolerance mechanism is concerned, a request rate limiter has been implemented as part of the booking component. <br>
 Specifically, whenever the number of incoming requests exceeds the rate of 100 booking requests in 10 seconds then the rate limiter denies any new ones, hence preventing the system from experiencing any downtime due to any possible Denial of Service attacks. In the event that the incoming requests return to the normal rate (less or equal to 100reqs/s) then they should be accepted from system and therefore returning to the previous normal operating state. <br><br>
 As soon as the rate-limiter gets activated we consider the status of the booking component being in overload or “attack” mode, therefore those requests are considered as malicious ones and are not being processed. The booking component does not respond since currently we do not want to overload the network and broker. We are however logging those requests into the DB and they can be further examined if needed. The DB is also designed with request entities that can be used in the future to store those requests and process them if the system is further developed with more advanced form of fault-tolerance. <br><br>
 Ultimately, as a way to visualize the rate limiter's functionality, the incoming requests are both logged in the backend's running server console as well as in the component's database (MongoDB). Below you can see an indicative example of recorded console messages for both an accepted and a denied request:
@@ -147,7 +147,7 @@ The number in the parentheses refers to the number of the data-flow number of th
 
 The team conducted manual testing of the different components, in order to verify both their individual functionality as well as the integration of them as part of the whole distributed system. The test cases that were covered are listed in this [spreadsheet document](https://docs.google.com/spreadsheets/d/1sVrW3H8GXKU8Zqsqo28yDHBOg3JuYMPrxIKelI0E1I8/edit?usp=sharing), which provides a description of them, a mapping to the requirements under test as well as the corresponding outcomes that help identify any possible issues.
 
-In addition, some unit tests were added in the bookingUI component as can be seen in this [report](https://git.chalmers.se/courses/dit355/2020/group-2/client/-/jobs/87834), which they mostly cover the rendering of the respective sub-components.
+In addition, some unit tests were added in the bookingUI component that mostly cover the rendering of the respective sub-components.
 
 ## Known issues
 
@@ -187,7 +187,7 @@ The development period is set to be  between 2020/11/16 and 2020/12/21 with init
 The team uses Google drive for documentation as well as Trello for task management. Draw io is used for designing the architecture diagrams.
 
 Guidelines team members are adhering to during the project:
-[Trello Guidelines](https://git.chalmers.se/courses/dit355/2020/group-2/documentation/-/blob/master/TrelloGuidelines.md)
+[Trello Guidelines](https://github.com/krasen86/documentation/blob/master/trelloGuidelines.md)
 
 # Team Overview
 ## Team members
